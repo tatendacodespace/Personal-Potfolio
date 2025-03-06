@@ -133,7 +133,7 @@ a:hover{
     transform: none;
 }
 .hamburger-icon span:first-child{
-    opacity: 1;
+    opacity: 2;
 }
 .hamburger-icon span:first-child{
     transform: none;
