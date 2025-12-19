@@ -306,3 +306,37 @@ document.addEventListener('keydown', function(e) {
         closeLightbox();
     }
 });
+
+// Resume highlights: show a 'Show more' toggle when highlights overflow on small screens
+document.addEventListener('DOMContentLoaded', function() {
+    const highlights = document.querySelector('.highlights');
+    const toggle = document.querySelector('.resume-toggle');
+    if (!highlights || !toggle) return;
+
+    const updateToggleVisibility = () => {
+        // if content is taller than container -> show toggle
+        if (highlights.scrollHeight > highlights.clientHeight + 6) {
+            toggle.style.display = 'inline-block';
+        } else {
+            toggle.style.display = 'none';
+        }
+    };
+
+    // initial check and on resize
+    updateToggleVisibility();
+    window.addEventListener('resize', updateToggleVisibility);
+
+    toggle.addEventListener('click', function() {
+        const expanded = this.getAttribute('aria-expanded') === 'true';
+        if (expanded) {
+            highlights.classList.remove('expanded');
+            this.setAttribute('aria-expanded', 'false');
+            this.textContent = 'Show more';
+            // keep toggle visible so user can expand again
+        } else {
+            highlights.classList.add('expanded');
+            this.setAttribute('aria-expanded', 'true');
+            this.textContent = 'Show less';
+        }
+    });
+});
