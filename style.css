@@ -503,6 +503,45 @@ footer {
     section h2 {
         font-size: 2.2rem;
     }
+
+    /* Mobile: make resume highlights flow and fit the viewport */
+    .resume-content {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+    }
+
+    .resume-left,
+    .resume-right {
+        flex: unset;
+        width: 100%;
+    }
+
+    /* force a single-column list and reduce spacing so tiles fit on smaller heights */
+    .resume-right ul {
+        grid-template-columns: 1fr;
+        gap: 0.6rem;
+        max-height: calc(100vh - 220px); /* allow some space for header/hero; scroll inside if needed */
+        overflow: auto;
+        padding-right: 0.5rem; /* room for scrollbar */
+    }
+
+    .resume-right ul li {
+        padding: 0.6rem 0.85rem;
+        font-size: 0.95rem;
+    }
+
+    .resume-right ul li::before {
+        width: 10px;
+        height: 10px;
+        flex: 0 0 10px;
+    }
+
+    /* reduce hero vertical footprint on small screens so more content fits */
+    .hero {
+        min-height: 58vh;
+        padding: 4.5rem 1rem 2.5rem;
+    }
 }
 
 /* Burger Menu */
