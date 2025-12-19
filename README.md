@@ -1,14 +1,16 @@
-# Personal-Potfolio
-Welcome to my personal portfolio website! This is where I showcase my projects, skills, and experience as a software development student. Here, you will find detailed information about the various projects I've worked on, including web and mobile applications, as well as the technologies I've used.
+# Personal Portfolio — Data Analyst
 
-Features:
-Project Showcases: Highlighting my key projects, including an expense tracker app, an eCommerce store, and more.
+This is the portfolio of Tatenda Midzi, a Data Analyst focused on turning raw data into clear, actionable insights. The site presents data-focused projects, skills, and contact information for recruiters and hiring managers.
 
-About Me: Learn more about my background, my journey in software development, and my interests.
+Highlights:
+- Projects demonstrating analysis with Excel, SQL, and Power BI
+- Skills in data cleaning, exploratory analysis, reporting, and dashboarding
+- Google Data Analytics Certificate
 
-Contact: Get in touch with me for collaborations, questions, or opportunities.
+Technologies & tools showcased:
+- Excel / Google Sheets
+- SQL
+- Power BI
+- R (basic)
 
-Technologies Used:
-HTML, CSS, JavaScript
-
-Feel free to explore my work and get in touch with me via the contact section!
+If you're hiring for an entry-level data analyst role or have internship opportunities, please reach out via the Contact section.

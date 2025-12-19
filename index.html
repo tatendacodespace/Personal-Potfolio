@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tatenda Midzi - Software Developer</title>
+    <title>Tatenda Midzi — Junior Data Analyst</title>
+    <meta name="description" content="Tatenda Midzi — Junior Data Analyst. Google Data Analytics certificate. Portfolio of Excel, SQL and Power BI case studies with downloadable resume and project artifacts.">
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Tatenda Midzi — Junior Data Analyst">
+    <meta property="og:description" content="Entry-level Data Analyst focused on turning raw data into clear, actionable insights. See projects in Excel, SQL and Power BI.">
+    <meta property="og:image" content="images/project1.jpeg">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -28,46 +35,51 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="burger">
+            <button class="burger" aria-label="Toggle navigation" aria-expanded="false">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
-            </div>
+            </button>
         </nav>
     </header>
 
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Tatenda Midzi</h1>
-            <h2>Aspiring Software Engineer</h2>
-            <p> Focused on Backend Development</p>
+            <h2>Junior Data Analyst</h2>
+            <p>Transforming data into clear, actionable insights to support decision-making.</p>
+            <div class="hero-tools">
+                <span class="pill">Excel / Google Sheets</span>
+                <span class="pill">SQL</span>
+                <span class="pill">Power BI</span>
+            </div>
             <div class="cta-buttons">
-                <a href="#projects" class="btn primary">View My Work</a>
-                <a href="#contact" class="btn secondary">Contact Me</a>
+                <a href="images/resume.pdf" class="btn primary" download target="_blank">Download Resume</a>
+                <a href="#projects" class="btn secondary">View Projects</a>
             </div>
         </div>
     </section>
 
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>
-                    I'm a software developer currently focused on learning backend development with <strong>Java</strong>, <strong>C#</strong>, <strong>Spring Boot</strong>, and <strong>ASP.NET Core</strong>.
-                  </p>
-                  <p>
-                    I’ve worked on small personal projects using <strong>SQL</strong>, and I'm exploring <strong>Kotlin</strong> and <strong>JavaScript</strong> to expand my skills.
-                  </p>
-                  <p>
-                    I'm passionate about learning how to build real-world backend systems and always looking for opportunities to grow through hands-on practice.
-                  </p>
-                  
-                  
-                  
-                  
+    <section id="resume" class="resume">
+        <h2>Resume & Certificates</h2>
+        <div class="resume-content">
+            <div class="resume-left">
+                <p><strong>Download my resume:</strong></p>
+                <a href="images/resume.pdf" class="btn primary" download target="_blank">Download PDF</a>
+                <p style="margin-top:.75rem;color:var(--muted)">Google Data Analytics Certificate: <a href="https://coursera.org/verify/professional-cert/O2YFTW5Q0ETB" target="_blank">Verify on Coursera</a></p>
+            </div>
+            <div class="resume-right">
+                <p><strong>Highlights</strong></p>
+                <ul>
+                    <li>Google Data Analytics Professional Certificate</li>
+                    <li>Excel: data cleaning, pivot tables, formulas</li>
+                    <li>SQL: joins, aggregations, window functions</li>
+                    <li>Power BI: dashboards and visual storytelling</li>
+                </ul>
             </div>
         </div>
     </section>
@@ -77,62 +89,104 @@
         <div class="project-grid">
             <div class="project-card">
                 <div class="project-header">
-                    <h3>Expense Budget Tracker</h3>
+                    <h3>Sales Analysis — Excel</h3>
+                    <div class="project-kpis">
+                        <span class="kpi">+18% Sales</span>
+                        <span class="kpi muted">Top 3 categories = 62% revenue</span>
+                    </div>
                     <div class="tech-stack">
-                        <span class="tech-tag">Kotlin</span>
-                        <span class="tech-tag">Android</span>
+                        <span class="tech-tag">Excel</span>
+                        <span class="tech-tag">Pivot Tables</span>
                     </div>
                 </div>
                 <div class="project-screenshot" onclick="openLightbox(this)">
-                    <img src="images/project1.jpeg" alt="Expense Budget Tracker Screenshot">
+                    <img src="images/project1.jpeg" alt="Sales analysis screenshot" loading="lazy">
                 </div>
                 <div class="project-description">
-                    <p>A simple and intuitive Android application to help users track their daily expenses, manage categories, and stay on top of their monthly budget goals.</p>
-                    <div class="project-features">
-                        <span class="feature-tag">Clean UI</span>
-                        <span class="feature-tag">Real-time Budget</span>
-                        <span class="feature-tag">Category Analysis</span>
-                    </div>
+                    <p>Analyzed a company's transactional dataset to identify revenue trends, seasonal patterns, and top-performing product categories.</p>
+                    <ul>
+                        <li><strong>Problem:</strong> Identify sales drivers and seasonal dips.</li>
+                        <li><strong>Dataset:</strong> Transactional sales CSV (date, SKU, region, revenue).</li>
+                        <li><strong>Tools:</strong> Excel, Pivot Tables, formulas.</li>
+                        <li><strong>Key insights:</strong> Top 3 categories contributed 62% of revenue; clear seasonal uptick in Q4 leading to recommendations for inventory planning.</li>
+                    </ul>
                 </div>
                 <div class="project-links">
-                    <a href="https://github.com/tatendacodespace/Expenses-Tracker-App" class="btn small secondary">Source Code</a>
+                    <a href="#" class="btn small primary" data-project="project1">Read Summary</a>
                 </div>
             </div>
             <!-- Add more project cards as needed -->
             <div class="project-card">
                 <div class="project-header">
-                    <h3>Online Clothing Store</h3>
+                    <h3>Customer Segmentation — SQL & Power BI</h3>
+                    <div class="project-kpis">
+                        <span class="kpi">Top 10% = 45% revenue</span>
+                        <span class="kpi muted">Estimated +8% retention uplift</span>
+                    </div>
                     <div class="tech-stack">
-                        <span class="tech-tag">HTML</span>
-                        <span class="tech-tag">CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">SQL</span>
+                        <span class="tech-tag">Power BI</span>
                     </div>
                 </div>
                 <div class="project-screenshot" onclick="openLightbox(this)">
-                    <img src="images/project2.png" alt="Online Clothing Store Screenshot">
+                    <img src="images/project2.png" alt="Customer segmentation dashboard screenshot" loading="lazy">
                 </div>
                 <div class="project-description">
-                    <p>A simple online store made for female users to buy clothing online. This project is still a work in progress, all front-end functionalities are done and i am currently implementing the backend functionalities using spring boot</p>
-                    <div class="project-features">
-                        <span class="feature-tag">Clean UI</span>
-                        <span class="feature-tag">Cart Fuctionality</span>
-                        <span class="feature-tag">Responsive Design</span>
-                    </div>
+                    <p>Performed segmentation to identify high-value customers and built a dashboard to track KPIs for acquisition and retention.</p>
+                    <ul>
+                        <li><strong>Problem:</strong> Prioritize marketing efforts toward highest LTV segments.</li>
+                        <li><strong>Dataset:</strong> Customer transactions and profile tables.</li>
+                        <li><strong>Tools:</strong> SQL (joins, aggregations), Power BI for visualization.</li>
+                        <li><strong>Key insights:</strong> Top 10% of customers accounted for 45% of revenue; recommendations included targeted retention campaigns.</li>
+                    </ul>
                 </div>
                 <div class="project-links">
-                    <a href="https://tatendacodespace.github.io/store/" class="btn small primary">Live Demo</a>
-                    <a href="https://github.com/tatendacodespace/store" class="btn small secondary">Source Code</a>
+                    <a href="#" class="btn small primary" data-project="project2">View Dashboard</a>
+                    <a href="#" class="btn small secondary" data-project="project2-notes">Project Notes</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Lightbox -->
-    <div class="lightbox" id="lightbox">
+    <div class="lightbox" id="lightbox" role="dialog" aria-label="Project screenshot" aria-hidden="true">
         <div class="lightbox-content">
-            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">&times;</button>
             <img src="" alt="Project Screenshot">
+        </div>
+    </div>
+
+    <!-- Project Detail Modals -->
+    <div class="project-modal" id="project1-modal" role="dialog" aria-hidden="true" aria-labelledby="project1-title">
+        <div class="modal-card">
+            <button class="modal-close" aria-label="Close project details" onclick="closeProjectModal('project1')">&times;</button>
+            <h3 id="project1-title">Sales Analysis — Excel</h3>
+            <p><strong>Problem:</strong> Identify sales drivers and seasonal dips for a retailer.</p>
+            <p><strong>Dataset:</strong> Transactional sales CSV including date, SKU, region, and revenue.</p>
+            <p><strong>Tools:</strong> Excel (pivot tables, formulas), data cleaning techniques.</p>
+            <p><strong>Approach:</strong> Cleaned data, created pivot tables to summarize revenue by category and time. Built supporting charts to reveal trends and seasonality.</p>
+            <p><strong>Outcome:</strong> Identified top categories responsible for majority of revenue and recommended Q4 inventory adjustments that could reduce stockouts during peak season.</p>
+        </div>
+    </div>
+
+    <div class="project-modal" id="project2-modal" role="dialog" aria-hidden="true" aria-labelledby="project2-title">
+        <div class="modal-card">
+            <button class="modal-close" aria-label="Close project details" onclick="closeProjectModal('project2')">&times;</button>
+            <h3 id="project2-title">Customer Segmentation — SQL & Power BI</h3>
+            <p><strong>Problem:</strong> Prioritize marketing efforts toward highest lifetime value customers.</p>
+            <p><strong>Dataset:</strong> Customer transactions and profile tables (orders, customers, transactions).</p>
+            <p><strong>Tools:</strong> SQL (joins, aggregations), Power BI (visualization, dashboarding).</p>
+            <p><strong>Approach:</strong> Performed RFM-style segmentation using SQL to compute recency, frequency, and monetary value metrics. Built an interactive Power BI dashboard to explore segments and track KPIs.</p>
+            <p><strong>Outcome:</strong> Identified top 10% customers generating ~45% of revenue and created a dashboard with filters to guide targeted retention campaigns.</p>
+        </div>
+    </div>
+
+    <div class="project-modal" id="project2-notes-modal" role="dialog" aria-hidden="true" aria-labelledby="project2-notes-title">
+        <div class="modal-card">
+            <button class="modal-close" aria-label="Close project details" onclick="closeProjectModal('project2-notes')">&times;</button>
+            <h3 id="project2-notes-title">Customer Segmentation — Notes</h3>
+            <p>SQL snippets used: GROUP BY customer_id, SUM(revenue), COUNT(order_id), joins between orders and customers for enrichment. Sample KPIs included ARPU, churn rate, and cohort retention.</p>
+            <p>Recommendations: Run A/B tests on targeted offers to the high-value cohort and monitor uplift via the dashboard.</p>
         </div>
     </div>
 
@@ -140,35 +194,27 @@
         <h2>Skills</h2>
         <div class="skills-grid">
             <div class="skill-category">
-                <h3>Programming Languages</h3>
+                <h3>Data Analysis</h3>
                 <div class="skill-items">
-                    <span>JavaScript</span>
-                    <span>Java</span>
-                    <span>C#</span>
-                    <span>PHP</span>
-                    <span>Kotlin</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h3>Web Development</h3>
-                <div class="skill-items">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>ASP.NET Core</span>
+                    <span>Excel / Google Sheets</span>
                     <span>SQL</span>
-                    <span>SpringBoot</span>
+                    <span>Data cleaning</span>
                 </div>
             </div>
             <div class="skill-category">
-                <h3>Tools & Technologies</h3>
+                <h3>Data Visualization</h3>
                 <div class="skill-items">
-                    <span>Git</span>
-                    <span>GitHub</span>
-                    <span>Azure DevOps</span>
-                    <span>VS Code</span>
-                    <span>Android Studio</span>
-                    <span>NetBeans</span>
-                    <span>Figma</span>
+                    <span>Power BI</span>
+                    <span>Tableau (basic)</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Programming & Practices</h3>
+                <div class="skill-items">
+                    <span>SQL (queries, joins, aggregations)</span>
+                    <span>R (basic)</span>
+                    <span>Exploratory analysis</span>
+                    <span>Reporting & dashboards</span>
                 </div>
             </div>
         </div>
@@ -195,11 +241,14 @@
                 <a href="https://github.com/tatendacodespace" class="social-link"><i class="fab fa-github"></i></a>
                 <a href="https://www.linkedin.com/in/tatenda-midzi-286421292/" class="social-link"><i class="fab fa-linkedin"></i></a>
             </div>
+            <div style="max-width:700px;margin:1.25rem auto 0;text-align:center;color:var(--muted);">
+                <p><strong>I'm actively looking for junior or internship roles in data analysis.</strong> Recruiters and hiring managers are welcome to reach out — I'm available to contribute to analysis, reporting, and dashboarding projects.</p>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Tatenda Midzi. All rights reserved.</p>
+        <p>&copy; 2025 Tatenda Midzi. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
